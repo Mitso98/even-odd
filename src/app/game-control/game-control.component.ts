@@ -31,7 +31,7 @@ export class GameControlComponent {
     }
 
     this.reference = setInterval(() => {
-      const isEven = this.isEven(this.counter++);
+      const isEven = this.isEven(++this.counter);
       this.sendData(isEven);
     }, 1000);
   }

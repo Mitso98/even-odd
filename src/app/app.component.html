@@ -7,23 +7,22 @@
   <div class="row">
     <div class="col-md-6">
       <div class="card">
-        <div class="card-header bg-primary text-white">Even</div>
+        <div class="card-header bg-danger text-white">Odd</div>
         <div class="card-body">
-          <div *ngFor="let counter of evenNumberList" class="text-center">
-            <p class="text-primary">{{ counter }}</p>
-            <hr>
+          <div *ngFor="let oddCounter of oddNumberList" class="text-center">
+            <p class="text-danger">{{ oddCounter }}</p>
+            <hr />
           </div>
         </div>
       </div>
     </div>
-
     <div class="col-md-6">
       <div class="card">
-        <div class="card-header bg-danger text-white">Odd</div>
+        <div class="card-header bg-primary text-white">Even</div>
         <div class="card-body">
-          <div *ngFor="let counter of oddNumberList" class="text-center">
-            <p class="text-danger">{{ counter }}</p>
-            <hr>
+          <div *ngFor="let evenCounter of evenNumberList" class="text-center">
+            <p class="text-primary">{{ evenCounter }}</p>
+            <hr />
           </div>
         </div>
       </div>
